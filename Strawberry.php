@@ -4,7 +4,9 @@
     // イチゴを表すクラス
     class Strawberry extends Fruit {
         public function setPrice($quantity) {
-            $this->prices[] = rand(400, 500);
+            for ($i = 0; $i < $quantity; $i++) {
+                $this->prices[] = rand(400, 500);
+            }
         }
     }
 

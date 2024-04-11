@@ -4,7 +4,9 @@
     // 桃を表すクラス
     class Peach extends Fruit {
         public function setPrice($quantity) {
-            $this->prices[] = rand(200, 300);
+            for ($i = 0; $i < $quantity; $i++) {
+                $this->prices[] = rand(200, 300);
+            }
         }
     }
 
